@@ -1,14 +1,9 @@
-@import "./abstracts/variables";
-@import "./abstracts/mixins";
-@import "./abstracts/utilities";
-@import "./base/base";
-@import "./base/typorgaphy";
-@import "./components/button";
-@import "./components/card";
-@import "./components/chart";
-@import "./components/form";
-@import "./components/header";
-@import "./components/list";
-@import "./components/main";
-@import "./components/content";
-@import "./components/counter";
+@import '../00-abstracts/variables';
+@import '../00-abstracts/mixins';
+@import '../00-abstracts/utilities';
+
+@import '../01-base/reset';
+@import '../01-base/typorgaphy';
+
+@import '../03-components/feature/feature';
+@import '../03-components/navigation/navigation';

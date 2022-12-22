@@ -1,0 +1,24 @@
+.counter {
+  display: flex;
+  align-items: center;
+
+  gap: 2rem;
+  font-size: 3.6rem;
+
+  @include media(phone) {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  &__number {
+    font-size: 6rem;
+    color: $color-white;
+    min-width: 10rem;
+    text-align: center;
+    flex: 1 0 10rem;
+
+    @include media(phone) {
+      flex-basis: 0;
+    }
+  }
+}

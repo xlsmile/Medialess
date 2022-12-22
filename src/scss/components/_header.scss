@@ -1,0 +1,7 @@
+.header {
+  @include flex(center, row, space-between);
+  @include box-shadow;
+  background: $color-gamma;
+  margin-bottom: 2rem;
+  padding: 3.6rem;
+}

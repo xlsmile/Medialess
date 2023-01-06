@@ -1,18 +1,19 @@
-//colors
-$color-white: #fff;
-$color-black: #21252f;
-$color-dark: #262b37;
-$color-alpha: #fff7f0;
-$color-beta: #f9eddb;
-$color-gamma: #6e3a84;
-$color-default: #3a5483;
-$color-success: #3a8340;
-$color-warning: #e46e1f;
-$color-danger: #c92c68;
+:root {
+  --font-family: 'Manrope', sans-serif;
 
-// fonts
-$font-size-xl: 4.4rem;
-$font-size-lg: 3.2rem;
-$font-size-md: 2.4rem;
-$font-size-sm: 1.6rem;
-$font-size-xs: 1.2rem;
+  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+
+  --color-black: #040c18;
+  --color-alpha: #031b34;
+  --color-beta: #042c54;
+  --color-gamma: #81afdd;
+  --color-delta: #ff8a71;
+  --color-white: #fff;
+
+  --font-size-xl: 4.4rem;
+  --font-size-lg: 3.2rem;
+  --font-size-md: 2.4rem;
+  --font-size-sm: 1.6rem;
+  --font-size-xs: 1.2rem;
+}

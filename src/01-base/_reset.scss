@@ -8,12 +8,12 @@
 
 html {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: var(--font-family);
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: $color-black;
+  background-color: var(--color-black);
   margin: 0;
 }

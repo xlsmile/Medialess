@@ -9,7 +9,7 @@
   border-radius: $topleft $topright $bottomright $bottomleft;
 }
 
-@mixin box-shadow($x: 0, $y: 0.2rem, $blur: 0.4rem, $color: rgba($color-black, 0.2)) {
+@mixin box-shadow($x: 0, $y: 0.2rem, $blur: 0.4rem, $color: rgba(var(--color-black), 0.2)) {
   box-shadow: $x $y $blur $color;
 }
 

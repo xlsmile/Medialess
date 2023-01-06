@@ -1,21 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+:root {
+  --font-family: "Manrope", sans-serif;
+  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+  --color-black: #040c18;
+  --color-alpha: #031b34;
+  --color-beta: #042c54;
+  --color-gamma: #81afdd;
+  --color-delta: #ff8a71;
+  --color-white: #fff;
+  --font-size-xl: 4.4rem;
+  --font-size-lg: 3.2rem;
+  --font-size-md: 2.4rem;
+  --font-size-sm: 1.6rem;
+  --font-size-xs: 1.2rem;
+}
+
 /*======================
 as media-quires are not based on root element, but on browsers' default 16px unit, we need to convert everything to ems (not rems!) in media queries, as rems will not work! Therefore, to get ems as relative units, we devide desired breakpoints in px by 16.
 ======================*/
-.u-flex {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: stretch;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 *,
 *::before,
 *::after {
@@ -26,35 +29,39 @@ a {
 
 html {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: var(--font-family);
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #21252f;
+  background-color: var(--color-black);
   margin: 0;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .title__primary, .title__secondary {
-  color: white;
+  color: var(--color-white);
 }
 .title__primary {
   font-size: calc(1rem + 5vmin);
   padding: 0.4em 0.8em;
-  background-color: #e46e1f;
-  box-shadow: 1px 1px 1px #000;
 }
 .title__secondary {
   font-size: calc(1rem + 2vmin);
 }
 
 .feature {
-  color: #fff;
   font-size: 5rem;
 }
 
 .navigation__main {
-  color: #3a8340;
   font-size: 5rem;
 }

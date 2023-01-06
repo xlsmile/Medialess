@@ -1,14 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
 .title {
   &__primary,
   &__secondary {
-    color: white;
+    color: var(--color-white);
   }
 
   &__primary {
     font-size: calc(1rem + 5vmin);
     padding: 0.4em 0.8em;
-    background-color: $color-warning;
-    box-shadow: 1px 1px 1px #000;
   }
 
   &__secondary {

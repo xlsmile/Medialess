@@ -8,6 +8,14 @@ as media-quires are not based on root element, but on browsers' default 16px uni
   justify-content: stretch;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 *,
 *::before,
 *::after {
@@ -17,14 +25,15 @@ as media-quires are not based on root element, but on browsers' default 16px uni
 }
 
 html {
+  box-sizing: border-box;
   font-family: sans-serif;
   font-size: 62.5%;
-  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
   background-color: #21252f;
+  margin: 0;
 }
 
 .title__primary, .title__secondary {

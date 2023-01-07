@@ -1,4 +1,24 @@
-.layout {
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-black);
+  margin: 0;
+}
+
+.base {
   display: grid;
   grid-template-rows: auto 68vh repeat(7, auto);
   grid-template-columns:

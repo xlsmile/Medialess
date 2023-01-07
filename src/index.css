@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 :root {
   --font-family: "Manrope", sans-serif;
   --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
@@ -41,34 +40,15 @@ body {
   margin: 0;
 }
 
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.layout {
+.base {
   display: grid;
   grid-template-rows: auto 68vh repeat(7, auto);
   grid-template-columns: [full-width-start] minmax(5.2rem, 1fr) [main-width-start] repeat(8, [columns-start] minmax(min-content, 16rem) [columns-end]) [main-width-end] minmax(5.2rem, 1fr) [full-width-end];
 }
-.layout > * {
+.base > * {
   color: var(--color-white);
   padding: 3.2rem;
   background-color: rgb(48, 108, 187);
-}
-
-.title__primary, .title__secondary {
-  color: var(--color-white);
-}
-.title__primary {
-  font-size: calc(1rem + 5vmin);
-  padding: 0.4em 0.8em;
-}
-.title__secondary {
-  font-size: calc(1rem + 2vmin);
 }
 
 .navigation__main {

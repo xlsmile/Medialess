@@ -1,8 +1,8 @@
-import { Navigation, Header, Partnership, Info, Future, Access, Cta, Blog, Footer, Copyright } from './02-components';
+import { Navigation, Header, Partnership, Info, Future, Access, Cta, Blog, Footer, Copyright } from '../02-components';
 
 function App() {
   return (
-    <div className="layout">
+    <div className="base">
       <Navigation />
       <Header />
       <Partnership />

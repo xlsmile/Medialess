@@ -1,5 +1,5 @@
 const Navigation = () => {
-  return <div className="navigation__main">Navigation</div>;
+  return <nav className="navigation__main">Navigation</nav>;
 };
 
 export default Navigation;

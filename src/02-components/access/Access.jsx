@@ -1,5 +1,14 @@
 const Access = () => {
-  return <div className="access">Access</div>;
+  return (
+    <section className="access">
+      <h2>Request Early Access to Get Started</h2>
+      <h3>The possibilities are beyond your imagination</h3>
+      <p>
+        Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way
+        everything joy alteration boisterous the attachment. Party we years to order allow asked of.
+      </p>
+    </section>
+  );
 };
 
 export default Access;

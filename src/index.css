@@ -97,4 +97,5 @@ body {
 
 .copyright {
   grid-column: full-width-start/full-width-end;
+  text-align: center;
 }

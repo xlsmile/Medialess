@@ -3,7 +3,8 @@
 
 @import '../01-base/reset';
 @import '../01-base/elements';
+@import '../01-base/layout';
 @import '../01-base/typorgaphy';
 
-@import '../03-components/feature/feature';
-@import '../03-components/navigation/navigation';
+@import '../02-components/navigation/navigation';
+@import '../02-components/header/header';

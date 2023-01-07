@@ -47,6 +47,18 @@ a {
   text-decoration: none;
 }
 
+.layout {
+  display: grid;
+  grid-template-rows: auto 68vh repeat(7, auto);
+  grid-template-columns: 1fr repeat(8, minmax(min-content, 18rem)) 1fr;
+  gap: 2rem;
+}
+.layout > * {
+  color: var(--color-white);
+  padding: 3.2rem;
+  background-color: rgb(48, 108, 187);
+}
+
 .title__primary, .title__secondary {
   color: var(--color-white);
 }
@@ -56,10 +68,6 @@ a {
 }
 .title__secondary {
   font-size: calc(1rem + 2vmin);
-}
-
-.feature {
-  font-size: 5rem;
 }
 
 .navigation__main {

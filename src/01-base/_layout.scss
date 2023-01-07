@@ -1,0 +1,12 @@
+.layout {
+  display: grid;
+  grid-template-rows: auto 68vh repeat(7, auto);
+  grid-template-columns: 1fr repeat(8, minmax(min-content, 18rem)) 1fr;
+  gap: 2rem;
+  > * {
+    color: var(--color-white);
+    // margin: 1rem 0;
+    padding: 3.2rem;
+    background-color: rgb(48, 108, 187);
+  }
+}

@@ -1,0 +1,9 @@
+export { default as Navigation } from './navigation/Navigation';
+export { default as Header } from './header/Header';
+export { default as Partnership } from './partnership/Partnership';
+export { default as Info } from './info/Info';
+export { default as Future } from './future/Future';
+export { default as Access } from './access/Access';
+export { default as Cta } from './cta/Cta';
+export { default as Blog } from './blog/Blog';
+export { default as Footer } from './footer/Footer';

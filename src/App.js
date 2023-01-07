@@ -1,13 +1,17 @@
-import { Navigation, Feature } from './03-components';
+import { Navigation, Header, Partnership, Info, Future, Access, Cta, Blog, Footer } from './02-components';
 
 function App() {
   return (
-    <div>
-      <header>
-        <h1>Medialess template</h1>
-        <Navigation />
-        <Feature />
-      </header>
+    <div className="layout">
+      <Navigation />
+      <Header />
+      <Partnership />
+      <Info />
+      <Future />
+      <Access />
+      <Cta />
+      <Blog />
+      <Footer />
     </div>
   );
 }

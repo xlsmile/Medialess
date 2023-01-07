@@ -1,11 +1,14 @@
 .layout {
   display: grid;
   grid-template-rows: auto 68vh repeat(7, auto);
-  grid-template-columns: 1fr repeat(8, minmax(min-content, 18rem)) 1fr;
-  gap: 2rem;
+  grid-template-columns:
+    [full-width-start] minmax(5.2rem, 1fr) [main-width-start] repeat(
+      8,
+      [columns-start] minmax(min-content, 16rem) [columns-end]
+    )
+    [main-width-end] minmax(5.2rem, 1fr) [full-width-end];
   > * {
     color: var(--color-white);
-    // margin: 1rem 0;
     padding: 3.2rem;
     background-color: rgb(48, 108, 187);
   }

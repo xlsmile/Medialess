@@ -1,4 +1,4 @@
-import { Navigation, Header, Partnership, Info, Future, Access, Cta, Blog, Footer } from './02-components';
+import { Navigation, Header, Partnership, Info, Future, Access, Cta, Blog, Footer, Copyright } from './02-components';
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
       <Cta />
       <Blog />
       <Footer />
+      <Copyright />
     </div>
   );
 }

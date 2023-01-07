@@ -1,5 +1,6 @@
-.navigation {
+.footer {
   &__main {
     grid-column: full-width-start / full-width-end;
+    background-color: var(--color-beta);
   }
 }

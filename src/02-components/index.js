@@ -7,3 +7,4 @@ export { default as Access } from './access/Access';
 export { default as Cta } from './cta/Cta';
 export { default as Blog } from './blog/Blog';
 export { default as Footer } from './footer/Footer';
+export { default as Copyright } from './copyright/Copyright';

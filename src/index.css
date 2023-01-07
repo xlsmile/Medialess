@@ -8,6 +8,8 @@
   --color-beta: #042c54;
   --color-gamma: #81afdd;
   --color-delta: #ff8a71;
+  --color-epsilon: #ae67fa;
+  --color-zeta: #2a653e;
   --color-white: #fff;
   --font-size-xl: 4.4rem;
   --font-size-lg: 3.2rem;
@@ -50,8 +52,7 @@ a {
 .layout {
   display: grid;
   grid-template-rows: auto 68vh repeat(7, auto);
-  grid-template-columns: 1fr repeat(8, minmax(min-content, 18rem)) 1fr;
-  gap: 2rem;
+  grid-template-columns: [full-width-start] minmax(5.2rem, 1fr) [main-width-start] repeat(8, [columns-start] minmax(min-content, 16rem) [columns-end]) [main-width-end] minmax(5.2rem, 1fr) [full-width-end];
 }
 .layout > * {
   color: var(--color-white);
@@ -71,5 +72,49 @@ a {
 }
 
 .navigation__main {
-  font-size: 5rem;
+  grid-column: full-width-start/full-width-end;
+}
+
+.header {
+  grid-column: main-width-start/main-width-end;
+  background-color: var(--color-epsilon);
+}
+
+.partnership {
+  grid-column: 3/9;
+  background-color: var(--color-zeta);
+}
+
+.info {
+  grid-column: main-width-start/main-width-end;
+  background-color: var(--color-gamma);
+}
+
+.future {
+  grid-column: main-width-start/main-width-end;
+  background-color: var(--color-zeta);
+}
+
+.access {
+  grid-column: main-width-start/main-width-end;
+  background-color: var(--color-delta);
+}
+
+.cta {
+  grid-column: main-width-start/main-width-end;
+  background-color: var(--color-epsilon);
+}
+
+.blog {
+  grid-column: main-width-start/main-width-end;
+  background-color: var(--color-delta);
+}
+
+.footer__main {
+  grid-column: full-width-start/full-width-end;
+  background-color: var(--color-beta);
+}
+
+.copyright {
+  grid-column: full-width-start/full-width-end;
 }

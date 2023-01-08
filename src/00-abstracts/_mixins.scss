@@ -1,8 +1,9 @@
-@mixin flex($align, $direction, $justify) {
+@mixin flex($align, $justify, $direction, $wrap) {
   display: flex;
   align-items: $align;
-  flex-direction: $direction;
   justify-content: $justify;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
 }
 
 @mixin border-radius($topleft: 0.4rem, $topright: 0.4rem, $bottomright: 0.4rem, $bottomleft: 0.4rem) {

@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-color: var(--color-black);
+  background-color: var(--color-beta);
   margin: 0;
 }
 
@@ -54,9 +54,4 @@ p {
     )
     [main-width-end] minmax(5.2rem, 1fr) [full-width-end];
   row-gap: 3.2em;
-
-  > * {
-    padding: 3.2rem;
-    outline: 1px solid #0a4784;
-  }
 }

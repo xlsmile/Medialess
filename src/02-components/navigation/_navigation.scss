@@ -1,19 +1,19 @@
 .navigation {
-  grid-column: full-width-start / full-width-end;
+  grid-column: main-width-start / main-width-end;
+  background: var(--color-beta);
 
   &__group {
-    margin: 0 auto;
-    max-width: 1280px;
-    display: flex;
-    justify-content: space-between;
+    @include flex(center, space-between, row, wrap);
+    box-shadow: 0 0 0 100vmax var(--color-beta);
+    clip-path: inset(0 -100vmax);
+    padding-block: 3.2rem;
   }
 }
 
 .list {
+  @include flex(center, space-between, row, wrap);
   list-style: none;
-  display: flex;
-  justify-content: space-between;
-  gap: 1.2em;
+  gap: 3.2em;
 
   &__item {
     font-size: 2rem;
@@ -22,5 +22,10 @@
   &__link {
     color: var(--color-white);
     text-decoration: none;
+
+    &--logo {
+      font-weight: 800;
+      font-size: 2.4rem;
+    }
   }
 }

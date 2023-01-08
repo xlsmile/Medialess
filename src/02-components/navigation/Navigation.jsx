@@ -4,23 +4,18 @@ const Navigation = () => {
       <div className="navigation__group">
         <ul className="list">
           <li className="list__item">
-            <a className="list__link" href="/">
+            <a className="list__link list__link--logo" href="/">
               AIO
             </a>
           </li>
           <li className="list__item">
             <a className="list__link" href="/">
-              Home
+              About
             </a>
           </li>
           <li className="list__item">
             <a className="list__link" href="/">
               What is AIO
-            </a>
-          </li>
-          <li className="list__item">
-            <a className="list__link" href="/">
-              Open AI
             </a>
           </li>
           <li className="list__item">
@@ -31,6 +26,11 @@ const Navigation = () => {
           <li className="list__item">
             <a className="list__link" href="/">
               Library
+            </a>
+          </li>
+          <li className="list__item">
+            <a className="list__link" href="/">
+              Contacts
             </a>
           </li>
         </ul>

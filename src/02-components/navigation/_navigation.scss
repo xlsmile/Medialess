@@ -1,5 +1,26 @@
 .navigation {
-  &__main {
-    grid-column: full-width-start / full-width-end;
+  grid-column: full-width-start / full-width-end;
+
+  &__group {
+    margin: 0 auto;
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2em;
+
+  &__item {
+    font-size: 2rem;
+  }
+
+  &__link {
+    color: unset;
+    text-decoration: none;
   }
 }

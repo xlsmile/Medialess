@@ -20,7 +20,7 @@ body {
 
 .base {
   display: grid;
-  grid-template-rows: auto 68vh repeat(7, auto);
+  grid-template-rows: auto 50vh repeat(7, auto);
   grid-template-columns:
     [full-width-start] minmax(5.2rem, 1fr) [main-width-start] repeat(
       8,

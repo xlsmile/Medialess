@@ -42,7 +42,7 @@ body {
 
 .base {
   display: grid;
-  grid-template-rows: auto 68vh repeat(7, auto);
+  grid-template-rows: auto 50vh repeat(7, auto);
   grid-template-columns: [full-width-start] minmax(5.2rem, 1fr) [main-width-start] repeat(8, [columns-start] minmax(min-content, 16rem) [columns-end]) [main-width-end] minmax(5.2rem, 1fr) [full-width-end];
 }
 .base > * {
@@ -51,8 +51,28 @@ body {
   background-color: rgb(48, 108, 187);
 }
 
-.navigation__main {
+.navigation {
   grid-column: full-width-start/full-width-end;
+}
+.navigation__group {
+  margin: 0 auto;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2em;
+}
+.list__item {
+  font-size: 2rem;
+}
+.list__link {
+  color: unset;
+  text-decoration: none;
 }
 
 .header {

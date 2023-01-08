@@ -53,7 +53,7 @@ p {
       [columns-start] minmax(min-content, 16rem) [columns-end]
     )
     [main-width-end] minmax(5.2rem, 1fr) [full-width-end];
-  gap: 3.2em;
+  row-gap: 3.2em;
 
   > * {
     padding: 3.2rem;

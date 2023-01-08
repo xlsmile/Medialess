@@ -1,5 +1,9 @@
 const Partnership = () => {
-  return <div className="partnership">Partnership</div>;
+  return (
+    <div className="partnership">
+      <p>Partnership</p>
+    </div>
+  );
 };
 
 export default Partnership;

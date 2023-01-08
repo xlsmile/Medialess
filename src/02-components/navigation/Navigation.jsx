@@ -5,7 +5,7 @@ const Navigation = () => {
         <ul className="list">
           <li className="list__item">
             <a className="list__link" href="/">
-              AIW
+              AIO
             </a>
           </li>
           <li className="list__item">
@@ -15,7 +15,7 @@ const Navigation = () => {
           </li>
           <li className="list__item">
             <a className="list__link" href="/">
-              What is AIW
+              What is AIO
             </a>
           </li>
           <li className="list__item">

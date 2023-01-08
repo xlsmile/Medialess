@@ -1,5 +1,9 @@
 const Cta = () => {
-  return <div className="cta">Cta</div>;
+  return (
+    <div className="cta">
+      <p>Cta</p>
+    </div>
+  );
 };
 
 export default Cta;

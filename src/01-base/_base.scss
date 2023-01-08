@@ -18,7 +18,33 @@ body {
   margin: 0;
 }
 
+h1,
+h2,
+h3 {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+}
+
+h2 {
+  font-size: var(--font-size-lg);
+}
+
+h3 {
+  font-size: var(--font-size-md);
+}
+
+p {
+  color: var(--color-gamma);
+  font-size: var(--font-size-sm);
+}
+
 .base {
+  background: var(--gradient-bg);
   display: grid;
   grid-template-rows: auto 50vh repeat(7, auto);
   grid-template-columns:
@@ -27,9 +53,10 @@ body {
       [columns-start] minmax(min-content, 16rem) [columns-end]
     )
     [main-width-end] minmax(5.2rem, 1fr) [full-width-end];
+  gap: 3.2em;
+
   > * {
-    color: var(--color-white);
     padding: 3.2rem;
-    background-color: rgb(48, 108, 187);
+    outline: 1px solid #0a4784;
   }
 }

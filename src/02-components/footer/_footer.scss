@@ -1,6 +1,6 @@
 .footer {
   &__main {
-    @include flex(center, space-between, row, wrap);
+    @include flex(center, space-between, row, nowrap);
     grid-column: main-width-start / main-width-end;
     background-color: var(--color-beta);
     box-shadow: 0 0 0 100vmax var(--color-beta);

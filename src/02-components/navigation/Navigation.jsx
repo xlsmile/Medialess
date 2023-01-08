@@ -1,3 +1,5 @@
+import Button from '../button/Button';
+
 const Navigation = () => {
   return (
     <nav className="navigation">
@@ -36,10 +38,10 @@ const Navigation = () => {
         </ul>
         <ul className="list">
           <li className="list__item">
-            <button>Sign in</button>
+            <Button className="button button__in">Sign in</Button>
           </li>
           <li className="list__item">
-            <button>Sign up</button>
+            <Button className="button">Sign up</Button>
           </li>
         </ul>
       </div>

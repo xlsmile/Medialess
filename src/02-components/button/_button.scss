@@ -1,11 +1,11 @@
 .button {
   @include border-radius;
   box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.4);
-  background-color: var(--color-danger);
+  background-color: $color-danger;
   border: none;
-  color: var(--color-white);
+  color: $color-white;
   font-family: inherit;
-  font-size: var(--font-size-sm);
+  font-size: $font-size-sm;
   font-weight: 300;
   padding: 0.8em 1.6em;
   position: relative;
@@ -14,9 +14,7 @@
   cursor: pointer;
 
   &:hover {
-    // background: lighten($color-alpha, 2%);
-    // background: lighten(var(--color-danger), 2%);
-    filter: saturate(1.2);
+    background: darken($color-danger, 10%);
   }
 
   &:active {

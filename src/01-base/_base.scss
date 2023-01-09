@@ -8,43 +8,43 @@
 
 html {
   box-sizing: border-box;
-  font-family: var(--font-family);
+  font-family: var($font-family);
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--color-black);
+  background-color: $color-black;
   margin: 0;
 }
 
 h1,
 h2,
 h3 {
-  background: var(--gradient-text);
+  background: $gradient-text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 h1 {
-  font-size: var(--font-size-xl);
+  font-size: $font-size-xl;
 }
 
 h2 {
-  font-size: var(--font-size-lg);
+  font-size: $font-size-lg;
 }
 
 h3 {
-  font-size: var(--font-size-md);
+  font-size: $font-size-md;
 }
 
 p {
-  color: var(--color-gamma);
-  font-size: var(--font-size-sm);
+  color: $color-gamma;
+  font-size: $font-size-sm;
 }
 
 .base {
-  background: var(--gradient-bg);
+  background: $gradient-bg;
   display: grid;
   grid-template-rows: auto 50vh repeat(7, auto);
   grid-template-columns:

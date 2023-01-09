@@ -1,24 +1,3 @@
-:root {
-  --font-family: "Manrope", sans-serif;
-  --gradient-bg: radial-gradient(circle at 5% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
-  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
-  --color-black: #040c18;
-  --color-alpha: #031b34;
-  --color-beta: #042c54;
-  --color-gamma: #81afdd;
-  --color-delta: #ff8a71;
-  --color-epsilon: #ae67fa;
-  --color-zeta: #2a653e;
-  --color-danger: #ff4820;
-  --color-white: #fff;
-  --font-size-xl: 5.2rem;
-  --font-size-lg: 4.6rem;
-  --font-size-md: 3.2rem;
-  --font-size-sm: 2rem;
-  --font-size-xs: 1.2rem;
-}
-
 /*======================
 as media-quires are not based on root element, but on browsers' default 16px unit, we need to convert everything to ems (not rems!) in media queries, as rems will not work! Therefore, to get ems as relative units, we devide desired breakpoints in px by 16.
 ======================*/
@@ -32,43 +11,43 @@ as media-quires are not based on root element, but on browsers' default 16px uni
 
 html {
   box-sizing: border-box;
-  font-family: var(--font-family);
+  font-family: var("Manrope", sans-serif);
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--color-black);
+  background-color: #040c18;
   margin: 0;
 }
 
 h1,
 h2,
 h3 {
-  background: var(--gradient-text);
+  background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 h1 {
-  font-size: var(--font-size-xl);
+  font-size: 5.2rem;
 }
 
 h2 {
-  font-size: var(--font-size-lg);
+  font-size: 4.6rem;
 }
 
 h3 {
-  font-size: var(--font-size-md);
+  font-size: 3.2rem;
 }
 
 p {
-  color: var(--color-gamma);
-  font-size: var(--font-size-sm);
+  color: #81afdd;
+  font-size: 2rem;
 }
 
 .base {
-  background: var(--gradient-bg);
+  background: radial-gradient(circle at 5% 25%, rgb(0, 40, 83) 0%, rgb(4, 12, 24) 100%);
   display: grid;
   grid-template-rows: auto 50vh repeat(7, auto);
   grid-template-columns: [full-width-start] minmax(5.2rem, 1fr) [main-width-start] repeat(8, [columns-start] minmax(min-content, 16rem) [columns-end]) [main-width-end] minmax(5.2rem, 1fr) [full-width-end];
@@ -80,11 +59,11 @@ p {
 .button {
   border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
   box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.4);
-  background-color: var(--color-danger);
+  background-color: #ff4820;
   border: none;
-  color: var(--color-white);
+  color: #fff;
   font-family: inherit;
-  font-size: var(--font-size-sm);
+  font-size: 2rem;
   font-weight: 300;
   padding: 0.8em 1.6em;
   position: relative;
@@ -93,10 +72,10 @@ p {
   cursor: pointer;
 }
 .button:hover {
-  filter: saturate(1.2);
+  background: #ec2a00;
 }
 .button:active {
-  box-shadow: 0 0.2rem 0.4rem rgba(var(--color-black), 0.2);
+  box-shadow: 0 0.2rem 0.4rem rgba(4, 12, 24, 0.2);
 }
 .button__in {
   border-radius: 0;
@@ -162,7 +141,7 @@ p {
   font-size: 2rem;
 }
 .list__link {
-  color: var(--color-white);
+  color: #fff;
   text-decoration: none;
 }
 .list__link--logo {
@@ -181,7 +160,7 @@ p {
 
 .info {
   grid-column: main-width-start/main-width-end;
-  background-color: var(--color-beta);
+  background-color: #042c54;
   padding-inline: 5.2rem;
 }
 
@@ -208,8 +187,8 @@ p {
   flex-direction: column;
   flex-wrap: wrap;
   grid-column: main-width-start/main-width-end;
-  background-color: var(--color-black);
-  box-shadow: 0 0 0 100vmax var(--color-black);
+  background-color: #040c18;
+  box-shadow: 0 0 0 100vmax #040c18;
   clip-path: inset(0 -100vmax);
 }
 
@@ -220,8 +199,8 @@ p {
   flex-direction: row;
   flex-wrap: nowrap;
   grid-column: full-width-start/full-width-end;
-  background-color: var(--color-black);
-  color: var(--color-gamma);
-  font-size: var(--font-size-xs);
+  background-color: #040c18;
+  color: #81afdd;
+  font-size: 1.2rem;
   padding-block: 2rem;
 }

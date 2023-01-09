@@ -22,34 +22,13 @@
   }
 
   &__in {
-    border-radius: 0;
     background: transparent;
     box-shadow: none;
-    position: relative;
+    outline: 1px solid transparent;
 
     &:hover {
-      background: none;
-    }
-
-    &:active {
-      box-shadow: none;
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      left: 0;
-      top: 100%;
-      height: 3px;
-      background-color: currentColor;
-      transform: scaleX(0);
-      transform-origin: center;
-      transition: transform 250ms ease-in;
-    }
-
-    &:hover::before {
-      transform: scaleX(1);
+      outline: 1px solid $color-white;
+      background: inherit;
     }
   }
 }

@@ -1,7 +1,8 @@
 .copyright {
+  @include flex(center, center, row, nowrap);
   grid-column: full-width-start / full-width-end;
+  background-color: var(--color-black);
   color: var(--color-gamma);
   font-size: var(--font-size-xs);
-  text-align: center;
-  padding-bottom: 2.4rem;
+  padding-block: 2rem;
 }

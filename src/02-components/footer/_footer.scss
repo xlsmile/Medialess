@@ -1,9 +1,9 @@
 .footer {
   &__main {
-    @include flex(center, space-between, row, nowrap);
+    @include flex(center, center, column, wrap);
     grid-column: main-width-start / main-width-end;
-    background-color: var(--color-beta);
-    box-shadow: 0 0 0 100vmax var(--color-beta);
+    background-color: var(--color-black);
+    box-shadow: 0 0 0 100vmax var(--color-black);
     clip-path: inset(0 -100vmax);
   }
 }

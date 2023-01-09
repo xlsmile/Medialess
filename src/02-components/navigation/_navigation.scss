@@ -1,12 +1,9 @@
 .navigation {
   grid-column: main-width-start / main-width-end;
-  background: var(--color-beta);
+  background: transparent;
 
   &__group {
     @include flex(center, space-between, row, wrap);
-    box-shadow: 0 0 0 100vmax var(--color-beta);
-    clip-path: inset(0 -100vmax);
-    padding-block: 3.2rem;
   }
 }
 

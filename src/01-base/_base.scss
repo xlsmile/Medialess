@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-color: var(--color-beta);
+  background-color: var(--color-black);
   margin: 0;
 }
 
@@ -53,5 +53,8 @@ p {
       [columns-start] minmax(min-content, 16rem) [columns-end]
     )
     [main-width-end] minmax(5.2rem, 1fr) [full-width-end];
-  row-gap: 3.2em;
+
+  > * {
+    padding-block: 4rem;
+  }
 }

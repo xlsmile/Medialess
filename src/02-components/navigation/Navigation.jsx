@@ -36,7 +36,7 @@ const Navigation = () => {
             </a>
           </li>
         </ul>
-        <ul className="list list-sign">
+        <ul className="list list--sign">
           <li className="list__item">
             <Button className="button button__in">Sign in</Button>
           </li>

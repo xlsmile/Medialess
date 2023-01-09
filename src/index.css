@@ -139,16 +139,24 @@ p {
 }
 
 .list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
   list-style: none;
   column-gap: 3.2em;
 }
+.list--pages {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 1 65%;
+}
 .list--sign {
-  justify-content: end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 1 35%;
 }
 .list__item {
   font-size: 2rem;

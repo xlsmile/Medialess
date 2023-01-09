@@ -8,12 +8,17 @@
 }
 
 .list {
-  @include flex(center, space-between, row, wrap);
   list-style: none;
   column-gap: 3.2em;
 
+  &--pages {
+    @include flex(center, flex-start, row, wrap);
+    flex: 1 1 65%;
+  }
+
   &--sign {
-    justify-content: end;
+    @include flex(center, flex-end, row, wrap);
+    flex: 1 1 35%;
   }
 
   &__item {

@@ -1,3 +1,19 @@
 .header {
   grid-column: main-width-start / main-width-end;
+  @include flex(center, flex-start, row, nowrap);
+  column-gap: 5.2rem;
+
+  &__blurb {
+    flex: 1 1 60%;
+  }
+
+  &__illustration {
+    flex: 1 1 40%;
+  }
+
+  &__image {
+    width: 100%;
+    opacity: 0.9;
+    aspect-ratio: 1 / 1;
+  }
 }

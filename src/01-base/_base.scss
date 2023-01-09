@@ -29,12 +29,14 @@ h3 {
 
 h1 {
   // font-size: $font-size-xl;
-  font-size: clamp(3.2rem, 5.2vmin, 6.6vh);
+  font-size: clamp(3.6rem, 6vmin, 5.6vh);
+  font-weight: 800;
+  line-height: 1.15;
 }
 
 h2 {
   // font-size: $font-size-lg;
-  font-size: clamp(2.4rem, 3.2vmin, 6.6vh);
+  font-size: clamp(2.4rem, 3.6vmin, 6.6vh);
 }
 
 h3 {
@@ -51,7 +53,7 @@ p {
 .base {
   background: $gradient-bg;
   display: grid;
-  grid-template-rows: auto 50vh repeat(7, auto);
+  // grid-template-rows: repeat(8, auto);
   grid-template-columns:
     [full-width-start] minmax(5.2rem, 1fr) [main-width-start] repeat(
       8,
@@ -61,5 +63,6 @@ p {
 
   > * {
     padding-block: 4rem;
+    outline: 1px dashed hsl(210, 38%, 30%);
   }
 }

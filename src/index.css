@@ -31,11 +31,13 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(3.2rem, 5.2vmin, 6.6vh);
+  font-size: clamp(3.6rem, 6vmin, 5.6vh);
+  font-weight: 800;
+  line-height: 1.15;
 }
 
 h2 {
-  font-size: clamp(2.4rem, 3.2vmin, 6.6vh);
+  font-size: clamp(2.4rem, 3.6vmin, 6.6vh);
 }
 
 h3 {
@@ -51,11 +53,11 @@ p {
 .base {
   background: radial-gradient(circle at 5% 25%, rgb(0, 40, 83) 0%, rgb(4, 12, 24) 100%);
   display: grid;
-  grid-template-rows: auto 50vh repeat(7, auto);
   grid-template-columns: [full-width-start] minmax(5.2rem, 1fr) [main-width-start] repeat(8, [columns-start] minmax(min-content, 16rem) [columns-end]) [main-width-end] minmax(5.2rem, 1fr) [full-width-end];
 }
 .base > * {
   padding-block: 4rem;
+  outline: 1px dashed hsl(210deg, 38%, 30%);
 }
 
 .button {
@@ -159,6 +161,23 @@ p {
 
 .header {
   grid-column: main-width-start/main-width-end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  column-gap: 5.2rem;
+}
+.header__blurb {
+  flex: 1 1 60%;
+}
+.header__illustration {
+  flex: 1 1 40%;
+}
+.header__image {
+  width: 100%;
+  opacity: 0.9;
+  aspect-ratio: 1/1;
 }
 
 .partnership {

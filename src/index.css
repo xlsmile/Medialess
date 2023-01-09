@@ -11,7 +11,7 @@ as media-quires are not based on root element, but on browsers' default 16px uni
 
 html {
   box-sizing: border-box;
-  font-family: var("Manrope", sans-serif);
+  font-family: "Manrope", sans-serif;
   font-size: 62.5%;
   scroll-behavior: smooth;
 }

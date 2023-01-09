@@ -4,7 +4,7 @@ const Navigation = () => {
   return (
     <nav className="navigation">
       <div className="navigation__group">
-        <ul className="list">
+        <ul className="list list--pages">
           <li className="list__item">
             <a className="list__link list__link--logo" href="/">
               AIO
@@ -36,7 +36,7 @@ const Navigation = () => {
             </a>
           </li>
         </ul>
-        <ul className="list">
+        <ul className="list list-sign">
           <li className="list__item">
             <Button className="button button__in">Sign in</Button>
           </li>

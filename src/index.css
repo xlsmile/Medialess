@@ -145,7 +145,10 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   list-style: none;
-  gap: 3.2em;
+  column-gap: 3.2em;
+}
+.list--sign {
+  justify-content: end;
 }
 .list__item {
   font-size: 2rem;

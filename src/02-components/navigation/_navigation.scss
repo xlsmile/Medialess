@@ -10,7 +10,11 @@
 .list {
   @include flex(center, space-between, row, wrap);
   list-style: none;
-  gap: 3.2em;
+  column-gap: 3.2em;
+
+  &--sign {
+    justify-content: end;
+  }
 
   &__item {
     font-size: 2rem;

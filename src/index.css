@@ -27,7 +27,6 @@ h3 {
   background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 0.8em;
 }
 
 h1 {
@@ -38,16 +37,18 @@ h1 {
 
 h2 {
   font-size: clamp(2.4rem, 3.6vmin, 6.6vh);
+  margin-bottom: 0.4em;
 }
 
 h3 {
   font-size: 3.2rem;
+  margin-bottom: 0.4em;
 }
 
 p {
   color: #81afdd;
-  font-size: clamp(1.6rem, 2.2rem, 2.4vw);
-  line-height: 1.6;
+  font-size: clamp(1.6rem, 2rem, 2vw);
+  line-height: 1.4;
 }
 
 .base {
@@ -162,14 +163,17 @@ p {
 .header {
   grid-column: main-width-start/main-width-end;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: stretch;
+  justify-content: stretch;
   flex-direction: row;
   flex-wrap: nowrap;
   column-gap: 5.2rem;
 }
 .header__blurb {
   flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.2rem;
 }
 .header__illustration {
   flex: 1 1 40%;

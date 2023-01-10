@@ -24,7 +24,6 @@ h3 {
   background: $gradient-text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 0.8em;
 }
 
 h1 {
@@ -37,17 +36,19 @@ h1 {
 h2 {
   // font-size: $font-size-lg;
   font-size: clamp(2.4rem, 3.6vmin, 6.6vh);
+  margin-bottom: 0.4em;
 }
 
 h3 {
   font-size: $font-size-md;
+  margin-bottom: 0.4em;
 }
 
 p {
   color: $color-gamma;
   // font-size: $font-size-sm;
-  font-size: clamp(1.6rem, 2.2rem, 2.4vw);
-  line-height: 1.6;
+  font-size: clamp(1.6rem, 2rem, 2vw);
+  line-height: 1.4;
 }
 
 .base {

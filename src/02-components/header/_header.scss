@@ -1,10 +1,13 @@
 .header {
   grid-column: main-width-start / main-width-end;
-  @include flex(center, flex-start, row, nowrap);
+  @include flex(stretch, stretch, row, nowrap);
   column-gap: 5.2rem;
 
   &__blurb {
     flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.2rem;
   }
 
   &__illustration {

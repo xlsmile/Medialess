@@ -16,7 +16,7 @@ const Header = () => {
           <button type="submit">Get started</button>
         </form>
         <div>
-          <img src={people} alt="users avatars" />
+          <img className="u-margin-bottom--sm" src={people} alt="users avatars" />
           <p>1,600 people requested access a visit in last 24 hours</p>
         </div>
       </div>

@@ -1,7 +1,7 @@
 /*======================
 as media-quires are not based on root element, but on browsers' default 16px unit, we need to convert everything to ems (not rems!) in media queries, as rems will not work! Therefore, to get ems as relative units, we devide desired breakpoints in px by 16.
 ======================*/
-.u-margin-bottom--sm {
+.margin-bottom--sm {
   margin-bottom: 2em;
 }
 

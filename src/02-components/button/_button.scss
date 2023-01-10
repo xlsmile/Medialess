@@ -1,24 +1,39 @@
 .button {
-  @include border-radius;
   box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.4);
   background-color: $color-danger;
   border: none;
   color: $color-white;
   font-family: inherit;
   font-size: $font-size-sm;
-  font-weight: 300;
+  font-weight: 500;
   padding: 0.8em 1.6em;
   position: relative;
   min-width: fit-content;
   transition: all 250ms;
   cursor: pointer;
 
+  &__rounded {
+    @include border-radius;
+
+    &--left {
+      border-top-left-radius: 0.4rem;
+      border-bottom-left-radius: 0.4rem;
+    }
+
+    &--right {
+      border-top-right-radius: 0.4rem;
+      border-bottom-right-radius: 0.4rem;
+    }
+  }
+
   &:hover {
     background: darken($color-danger, 10%);
   }
 
+  &:focus,
   &:active {
     @include box-shadow;
+    outline: 1px solid $color-white;
   }
 
   &__in {

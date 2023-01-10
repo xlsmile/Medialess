@@ -1,3 +1,4 @@
+import Form from '../form/From';
 import people from '../../assets/people.png';
 import head from '../../assets/head.png';
 
@@ -10,11 +11,7 @@ const Header = () => {
           Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence
           way everything joy alteration boisterous the attachment. Party we years to order allow asked of.
         </p>
-        <form>
-          <label htmlFor="email">Your Email Address</label>
-          <input id="email" type="email" name="email" placeholder="Your Email Address" />
-          <button type="submit">Get started</button>
-        </form>
+        <Form />
         <div>
           <img className="margin-bottom--sm" src={people} alt="users avatars" />
           <p>1,600 people requested access a visit in last 24 hours</p>

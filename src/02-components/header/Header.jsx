@@ -1,4 +1,4 @@
-import Form from '../form/From';
+import Form from '../form/Form';
 import people from '../../assets/people.png';
 import head from '../../assets/head.png';
 

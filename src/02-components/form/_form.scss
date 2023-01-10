@@ -1,0 +1,27 @@
+.form {
+  font-size: $font-size-sm;
+
+  &__label {
+    display: block;
+    color: $color-white;
+  }
+
+  &__input {
+    background-color: $color-beta;
+    border: 1px solid transparent;
+    outline: 1px solid $color-beta;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    color: $color-gamma;
+    padding: 0.8em 1.6em;
+    font-size: $font-size-sm;
+    font-weight: 200;
+    transition: all 250ms;
+
+    &:focus,
+    &:active {
+      border: 1px solid transparent;
+      outline: 1px solid $color-white;
+    }
+  }
+}

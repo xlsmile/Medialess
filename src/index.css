@@ -59,7 +59,7 @@ p {
 }
 
 .base {
-  background: radial-gradient(circle at 5% 25%, rgb(0, 40, 83) 0%, rgb(4, 12, 24) 100%);
+  background: radial-gradient(circle at 50% 25%, #052a52 0%, #040c18 90%);
   display: grid;
   grid-template-columns: [full-width-start] minmax(5.2rem, 1fr) [main-width-start] repeat(8, [columns-start] minmax(min-content, 16rem) [columns-end]) [main-width-end] minmax(5.2rem, 1fr) [full-width-end];
 }

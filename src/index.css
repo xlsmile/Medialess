@@ -59,7 +59,7 @@ p {
 }
 
 .base {
-  background: radial-gradient(circle at 50% 25%, #052a52 0%, #040c18 90%);
+  background: radial-gradient(circle at 35% 10%, #052a52 0%, #040c18 90%);
   display: grid;
   grid-template-columns: [full-width-start] minmax(5.2rem, 1fr) [main-width-start] repeat(8, [columns-start] minmax(min-content, 16rem) [columns-end]) [main-width-end] minmax(5.2rem, 1fr) [full-width-end];
 }
@@ -228,7 +228,16 @@ p {
 
 .partnership {
   grid-column: main-width-start/main-width-end;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 3.2rem;
+}
+.partnership > img {
+  width: 100%;
+  max-width: 10rem;
 }
 
 .info {

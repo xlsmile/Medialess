@@ -1,4 +1,10 @@
 .partnership {
   grid-column: main-width-start / main-width-end;
-  text-align: center;
+  @include flex(center, center, row, wrap);
+  column-gap: 3.2rem;
+
+  > img {
+    width: 100%;
+    max-width: 10rem;
+  }
 }

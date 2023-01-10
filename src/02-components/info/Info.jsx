@@ -1,12 +1,35 @@
 const Info = () => {
   return (
     <section className="info">
-      <h2>What is AIO</h2>
-      <p>
-        We so opinion friends me message as delight. Whole front do of plate heard oh ought. His defective nor convinced
-        residence own. Connection has put impossible own apartments boisterous. At jointure ladyship an insisted so
-        humanity he. Friendly bachelor entrance to on by.
+      <h2 className="info__feature-title">What is AIO</h2>
+      <p className="info__feature-text">
+        Sloop hardtack bilge water grapple belay cutlass haul wind warp barque skysail. Fire ship Gold Road Pirate Round
+        deadlights crow's nest snow squiffy furl booty skysail. Ho carouser reef Privateer parley league gaff gunwalls
+        cutlass hail-shot.
       </p>
+      <h3>The possibilities are beyond your imagination</h3>
+      <a href="/">Explore The Library</a>
+      <div>
+        <h4 className="info__feature-title margin-bottom--xs">Chatbots</h4>
+        <p>
+          Run a rig boatswain long boat code of conduct grog gaff ballast topmast chase Blimey. Tender overhaul mutiny
+          fluke scourge of the seven seas driver killick no prey, no pay stern gun.
+        </p>
+      </div>
+      <div>
+        <h4 className="info__feature-title margin-bottom--xs">Knowledgebase</h4>
+        <p>
+          Handsomely spyglass gabion draught Jack Ketch cog fire in the hole shrouds to go on account loaded to the
+          gunwalls. Spike heave to topsail hogshead Yellow Jack plunder sloop grapple spanker fathom.
+        </p>
+      </div>
+      <div>
+        <h4 className="info__feature-title margin-bottom--xs">Education</h4>
+        <p>
+          Dead men tell no tales nipper yard furl knave clap of thunder carouser Blimey crimp hornswaggle. Transom hulk
+          ye brig boatswain Brethren of the Coast scallywag killick rigging maroon.
+        </p>
+      </div>
     </section>
   );
 };

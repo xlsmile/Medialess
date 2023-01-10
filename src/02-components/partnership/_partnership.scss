@@ -2,6 +2,7 @@
   grid-column: main-width-start / main-width-end;
   @include flex(center, center, row, wrap);
   column-gap: 3.2rem;
+  padding: 6rem 0 8rem;
 
   > img {
     width: 100%;

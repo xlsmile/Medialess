@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="footer__main">
       <h2>Do you want to step in to the future before others</h2>
-      <Button className="button">Request Early Access</Button>
+      <Button className="button button__rounded">Request Early Access</Button>
     </footer>
   );
 };

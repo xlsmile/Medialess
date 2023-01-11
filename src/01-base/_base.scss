@@ -51,6 +51,10 @@ p {
   line-height: 1.4;
 }
 
+ul {
+  list-style: none;
+}
+
 .base {
   background: $gradient-bg;
   display: grid;

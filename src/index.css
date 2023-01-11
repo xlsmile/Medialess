@@ -53,7 +53,7 @@ h3 {
 }
 
 p {
-  color: #81afdd;
+  color: #8bbae9;
   font-size: clamp(1.6rem, 2rem, 2vw);
   line-height: 1.4;
 }
@@ -81,6 +81,13 @@ p {
   transition: all 250ms;
   cursor: pointer;
 }
+.button:hover {
+  background: #ec2a00;
+}
+.button:focus, .button:active {
+  box-shadow: 0 0.2rem 0.4rem rgba(4, 12, 24, 0.2);
+  outline: 1px solid #fff;
+}
 .button__rounded {
   border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
 }
@@ -92,12 +99,12 @@ p {
   border-top-right-radius: 0.4rem;
   border-bottom-right-radius: 0.4rem;
 }
-.button:hover {
-  background: #ec2a00;
+.button__rounded--cta {
+  background-color: #040c18;
+  border-radius: 100vw;
 }
-.button:focus, .button:active {
-  box-shadow: 0 0.2rem 0.4rem rgba(4, 12, 24, 0.2);
-  outline: 1px solid #fff;
+.button__rounded--cta:hover {
+  background-color: #052a52;
 }
 .button__in {
   background: transparent;
@@ -185,12 +192,12 @@ p {
   color: #fff;
 }
 .form__input {
-  background-color: #042c54;
+  background-color: #063565;
   border: 1px solid transparent;
-  outline: 1px solid #042c54;
+  outline: 1px solid #063565;
   border-top-left-radius: 0.4rem;
   border-bottom-left-radius: 0.4rem;
-  color: #81afdd;
+  color: #8bbae9;
   padding: 0.8em 1.6em;
   font-size: 2rem;
   font-weight: 200;
@@ -294,6 +301,28 @@ p {
 
 .cta {
   grid-column: main-width-start/main-width-end;
+  background: linear-gradient(103.22deg, #ae67fa 5%, #ff8a71 95%);
+  padding: 5.2rem;
+  border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
+  vertical-align: middle;
+}
+.cta__title, .cta__text {
+  color: #040c18;
+}
+.cta__title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1.2em;
+}
+.cta__text {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.cta .dvd {
+  display: inline-block;
+}
+.cta .button {
+  float: right;
 }
 
 .blog {
@@ -320,7 +349,7 @@ p {
   flex-wrap: nowrap;
   grid-column: full-width-start/full-width-end;
   background-color: #040c18;
-  color: #81afdd;
+  color: #8bbae9;
   font-size: 1.2rem;
   padding-block: 2rem;
 }

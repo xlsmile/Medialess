@@ -12,6 +12,16 @@
   transition: all 250ms;
   cursor: pointer;
 
+  &:hover {
+    background: darken($color-danger, 10%);
+  }
+
+  &:focus,
+  &:active {
+    @include box-shadow;
+    outline: 1px solid $color-white;
+  }
+
   &__rounded {
     @include border-radius;
 
@@ -24,16 +34,15 @@
       border-top-right-radius: 0.4rem;
       border-bottom-right-radius: 0.4rem;
     }
-  }
 
-  &:hover {
-    background: darken($color-danger, 10%);
-  }
+    &--cta {
+      background-color: $color-black;
+      border-radius: 100vw;
 
-  &:focus,
-  &:active {
-    @include box-shadow;
-    outline: 1px solid $color-white;
+      &:hover {
+        background-color: $color-alpha;
+      }
+    }
   }
 
   &__in {

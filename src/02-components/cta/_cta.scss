@@ -1,3 +1,31 @@
 .cta {
   grid-column: main-width-start / main-width-end;
+  background: $gradient-bar;
+  padding: 5.2rem;
+  @include border-radius(0.8rem, 0.8rem, 0.8rem, 0.8rem);
+  vertical-align: middle;
+
+  &__title,
+  &__text {
+    color: $color-black;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1.2em;
+  }
+
+  &__text {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  .dvd {
+    display: inline-block;
+  }
+
+  .button {
+    float: right;
+  }
 }

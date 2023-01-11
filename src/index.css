@@ -31,7 +31,7 @@ body {
 h1,
 h2,
 h3 {
-  background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  background: linear-gradient(89.97deg, #ae67fa 15%, #ff8a71 85%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -272,7 +272,7 @@ p {
 }
 .info__feature-title::before, .info__card-title::before {
   content: "";
-  background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+  background: linear-gradient(103.22deg, #ae67fa 5%, #ff8a71 95%);
   position: absolute;
   inset: -2rem auto;
   width: 4.4rem;

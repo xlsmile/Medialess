@@ -16,7 +16,6 @@ $color-zeta: #2a653e;
 $color-danger: #ff4820;
 $color-white: #fff;
 
-// $gradient-bg: radial-gradient(circle at 5% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
 $gradient-bg: radial-gradient(circle at 0% 35%, $color-alpha 0%, $color-black 80%);
 $gradient-feature: radial-gradient(
   circle at 40% -150%,
@@ -24,5 +23,5 @@ $gradient-feature: radial-gradient(
   rgba(4, 44, 84, 1) 85%,
   rgba(27, 120, 222, 0.9) 105%
 );
-$gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
-$gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+$gradient-bar: linear-gradient(103.22deg, $color-epsilon 5%, $color-delta 95%);
+$gradient-text: linear-gradient(89.97deg, $color-epsilon 15%, $color-delta 85%);

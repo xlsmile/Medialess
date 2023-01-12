@@ -6,6 +6,7 @@ $font-size-md: 3.2rem;
 $font-size-sm: 2rem;
 $font-size-xs: 1.2rem;
 
+$color-null: #04182d;
 $color-black: #040c18;
 $color-alpha: #052a52;
 $color-beta: #063565;
@@ -17,6 +18,7 @@ $color-danger: #ff4820;
 $color-white: #fff;
 
 $gradient-bg: radial-gradient(circle at 0% 35%, $color-alpha 0%, $color-black 80%);
+$gradient-nav: radial-gradient(circle at 36% 200%, $color-null 0%, $color-alpha 60%);
 $gradient-feature: radial-gradient(
   circle at 40% -150%,
   #042c54 30%,

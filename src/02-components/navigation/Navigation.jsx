@@ -6,7 +6,7 @@ const Navigation = () => {
       <div className="navigation__group">
         <ul className="list list--pages">
           <li className="list__item">
-            <a className="list__link list__link--logo" href="/">
+            <a className="list__link list__link--logo" href="#home">
               AIO
             </a>
           </li>

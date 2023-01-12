@@ -69,6 +69,7 @@ ul {
 }
 .base > * {
   padding-block: 4rem;
+  scroll-margin-top: 16rem;
 }
 
 .button {
@@ -121,8 +122,15 @@ ul {
 }
 
 .navigation {
-  grid-column: main-width-start/main-width-end;
-  background: transparent;
+  grid-column: full-width-start/full-width-end;
+  background: radial-gradient(circle at 36% 200%, #04182d 0%, #052a52 60%);
+  box-shadow: 0 0.8rem 8rem rgba(6, 53, 101, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 3.2rem 5.2rem;
 }
 .navigation__group {
   display: flex;
@@ -130,6 +138,9 @@ ul {
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 100%;
+  max-width: 128rem;
+  margin: 0 auto;
 }
 
 .list {
@@ -219,6 +230,7 @@ ul {
   flex-direction: row;
   flex-wrap: nowrap;
   column-gap: 5.2rem;
+  margin-top: 14vh;
 }
 .header__blurb {
   flex: 1 1 60%;

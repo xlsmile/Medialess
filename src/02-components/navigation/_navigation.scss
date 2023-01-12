@@ -1,6 +1,17 @@
 .navigation {
-  grid-column: main-width-start / main-width-end;
-  background: transparent;
+  grid-column: full-width-start / full-width-end;
+  background: $gradient-nav;
+  box-shadow: 0 0.8rem 8rem rgba($color-beta, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+  padding: 3.2rem 5.2rem;
+  // height: 14vh;
+
+  // display: none;
 
   &__group {
     @include flex(center, space-between, row, wrap);
@@ -8,7 +19,9 @@
     // grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
     // justify-items: center;
     // width: min(100%, max(100%, 350px));
-    // width: 100%;
+    width: 100%;
+    max-width: 128rem;
+    margin: 0 auto;
   }
 }
 

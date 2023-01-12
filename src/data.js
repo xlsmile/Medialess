@@ -1,6 +1,7 @@
-export const navLinks = [
-  { id: '01', href: '#home', text: 'home' },
-  { id: '02', href: '#about', text: 'about' },
-  { id: '03', href: '#services', text: 'services' },
-  { id: '04', href: '#tours', text: 'tours' },
+export const navList = [
+  { id: '01', href: '#header', text: 'AIO' },
+  { id: '02', href: '#info', text: 'What is AIO' },
+  { id: '03', href: '#future', text: 'Future' },
+  { id: '04', href: '#access', text: 'Access' },
+  { id: '05', href: '#blog', text: 'Blog' },
 ];

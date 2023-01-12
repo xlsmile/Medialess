@@ -48,6 +48,22 @@
     // padding: 0.4em;
     // outline: 1px solid $color-beta;
     // width: fit-content;
+
+    &:first-of-type {
+      .list__link {
+        font-weight: 800;
+        font-size: 2.4rem;
+        transition: color 250ms;
+
+        &::before {
+          display: none;
+        }
+
+        &:hover {
+          color: $color-danger;
+        }
+      }
+    }
   }
 
   &__link {
@@ -71,20 +87,6 @@
 
     &:hover::before {
       transform: scaleX(1);
-    }
-
-    &--logo {
-      font-weight: 800;
-      font-size: 2.4rem;
-      transition: color 250ms;
-
-      &::before {
-        display: none;
-      }
-
-      &:hover {
-        color: $color-danger;
-      }
     }
   }
 }

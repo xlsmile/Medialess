@@ -1,3 +1,4 @@
+import { navList } from '../../data';
 import Button from '../button/Button';
 
 const Navigation = () => {
@@ -5,18 +6,22 @@ const Navigation = () => {
     <nav className="navigation">
       <div className="navigation__group">
         <ul className="list list--pages">
-          <li className="list__item">
-            <a className="list__link list__link--logo" href="#home">
+          {navList.map((listitem) => (
+            // if first item in the array => add "list__link--logo" class
+            <li className="list__item" key={listitem.id}>
+              <a className="list__link" href={listitem.href}>
+                {listitem.text}
+              </a>
+            </li>
+          ))}
+
+          {/* <li className="list__item">
+            <a className="list__link list__link--logo" href="#header">
               AIO
             </a>
           </li>
           <li className="list__item">
-            <a className="list__link" href="/">
-              About
-            </a>
-          </li>
-          <li className="list__item">
-            <a className="list__link" href="/">
+            <a className="list__link" href="#info">
               What is AIO
             </a>
           </li>
@@ -34,7 +39,7 @@ const Navigation = () => {
             <a className="list__link" href="/">
               Contacts
             </a>
-          </li>
+          </li> */}
         </ul>
         <ul className="list list--sign">
           <li className="list__item">

@@ -1,6 +1,6 @@
 const Access = () => {
   return (
-    <section className="access">
+    <section className="access" id="access">
       <h2>Request Early Access to Get Started</h2>
       <h3>The possibilities are beyond your imagination</h3>
       <p>

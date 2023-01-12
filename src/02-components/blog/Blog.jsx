@@ -1,6 +1,6 @@
 const Blog = () => {
   return (
-    <section className="blog">
+    <section className="blog" id="blog">
       <h2>A lot is happening, We are blogging about it.</h2>
       <article>
         <p>Article 01</p>

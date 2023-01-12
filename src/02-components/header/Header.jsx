@@ -4,7 +4,7 @@ import head from '../../assets/head.png';
 
 const Header = () => {
   return (
-    <header className="header" id="home">
+    <header className="header" id="header">
       <div className="header__blurb">
         <h1>Let's Build Something amazing with AIO AI Open</h1>
         <p>

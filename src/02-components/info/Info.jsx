@@ -1,6 +1,6 @@
 const Info = () => {
   return (
-    <section className="info">
+    <section className="info" id="info">
       <h2 className="info__feature-title">What is AIO</h2>
       <p className="info__feature-text">
         Sloop hardtack bilge water grapple belay cutlass haul wind warp barque skysail. Fire ship Gold Road Pirate Round

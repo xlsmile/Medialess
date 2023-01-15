@@ -19,22 +19,17 @@ body {
 }
 
 h1,
-h2,
-h3 {
-  background: $gradient-text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+h2 {
+  @include gradient-text;
 }
 
 h1 {
-  // font-size: $font-size-xl;
   font-size: clamp(3.6rem, 6vmin, 5.6vh);
   font-weight: 800;
   line-height: 1.3;
 }
 
 h2 {
-  // font-size: $font-size-lg;
   font-size: clamp(2.4rem, 3.6vmin, 6.6vh);
   margin-bottom: 0.4em;
 }
@@ -46,13 +41,16 @@ h3 {
 
 p {
   color: $color-gamma;
-  // font-size: $font-size-sm;
   font-size: clamp(1.6rem, 2rem, 2vw);
   line-height: 1.4;
 }
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .base {

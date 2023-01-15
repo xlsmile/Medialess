@@ -29,8 +29,7 @@ body {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   background: linear-gradient(89.97deg, #ae67fa 15%, #ff8a71 85%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -60,6 +59,10 @@ p {
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .base {
@@ -178,7 +181,6 @@ ul {
 }
 .list__link {
   color: #fff;
-  text-decoration: none;
   position: relative;
   padding: 0.8em 0;
 }
@@ -230,7 +232,7 @@ ul {
   flex-direction: row;
   flex-wrap: nowrap;
   column-gap: 5.2rem;
-  margin-top: 14vh;
+  margin-top: 14rem;
 }
 .header__blurb {
   flex: 1 1 60%;
@@ -283,6 +285,9 @@ ul {
   grid-column: 1/2;
 }
 .info__feature-title--sub {
+  background: linear-gradient(89.97deg, #ae67fa 15%, #ff8a71 85%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   grid-column: 1/3;
 }
 .info__feature-text {
@@ -295,7 +300,6 @@ ul {
   color: #ff8a71;
   font-size: 2rem;
   font-weight: 500;
-  text-decoration: none;
 }
 .info__feature-title, .info__card-title {
   position: relative;
@@ -320,6 +324,11 @@ ul {
 
 .access {
   grid-column: main-width-start/main-width-end;
+}
+.access__titlesub {
+  background: linear-gradient(89.97deg, #ae67fa 15%, #ff8a71 85%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .cta {
@@ -350,6 +359,49 @@ ul {
 
 .blog {
   grid-column: main-width-start/main-width-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 3.2rem;
+}
+.blog__title {
+  grid-column: 1/-1;
+}
+
+.blog-post {
+  background-color: #052a52;
+  display: flex;
+  flex-direction: column;
+}
+.blog-post__content {
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  row-gap: 3.2rem;
+}
+.blog-post__image {
+  aspect-ratio: 2/1;
+  width: 100%;
+  object-fit: cover;
+}
+.blog-post__date, .blog-post__title, .blog-post__link {
+  font-weight: 800;
+  color: #fff;
+}
+.blog-post__date {
+  display: inline-block;
+  font-size: 1.6rem;
+  margin-bottom: 1.2em;
+}
+.blog-post__title {
+  line-height: 1.2;
+}
+.blog-post__link {
+  font-size: 1.6rem;
+}
+.blog-post--featured {
+  grid-row: span 2;
 }
 
 .footer__main {
@@ -373,6 +425,6 @@ ul {
   grid-column: full-width-start/full-width-end;
   background-color: #040c18;
   color: #8bbae9;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   padding-block: 2rem;
 }

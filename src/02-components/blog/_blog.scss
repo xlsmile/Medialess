@@ -1,3 +1,57 @@
 .blog {
   grid-column: main-width-start / main-width-end;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 3.2rem;
+
+  &__title {
+    grid-column: 1 / -1;
+  }
+}
+
+.blog-post {
+  background-color: $color-alpha;
+  display: flex;
+  flex-direction: column;
+
+  &__content {
+    padding: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    row-gap: 3.2rem;
+  }
+
+  &__image {
+    aspect-ratio: 2 / 1;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__date,
+  &__title,
+  &__link {
+    font-weight: 800;
+    color: $color-white;
+  }
+
+  &__date {
+    display: inline-block;
+    font-size: $font-size-xs;
+    margin-bottom: 1.2em;
+  }
+
+  &__title {
+    line-height: 1.2;
+  }
+
+  &__link {
+    font-size: $font-size-xs;
+  }
+
+  &--featured {
+    grid-row: span 2;
+  }
 }

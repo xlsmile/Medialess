@@ -13,7 +13,7 @@ const Header = () => {
         </p>
         <Form />
         <div>
-          <img className="margin-bottom--sm" src={people} alt="users avatars" />
+          <img className="header__blurb-image margin-bottom--sm" src={people} alt="users avatars" />
           <p>1,600 people requested access a visit in last 24 hours</p>
         </div>
       </div>

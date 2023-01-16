@@ -1,5 +1,22 @@
 .access {
   grid-column: main-width-start / main-width-end;
+  @include flex(center, space-between, row-reverse, nowrap);
+  row-gap: 6rem;
+
+  &__header {
+    flex: 1 0 50%;
+    transform: translateY(5em);
+
+    > * + * {
+      margin-top: 2.8rem;
+    }
+  }
+
+  &__title {
+    font-size: $font-size-sm;
+    color: $color-eta;
+    -webkit-text-fill-color: $color-eta;
+  }
 
   &__titlesub {
     @include gradient-text;

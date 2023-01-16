@@ -102,6 +102,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
 .base {
   background: radial-gradient(circle at 0% 35%, #052a52 0%, #040c18 80%);
   display: grid;
@@ -277,6 +281,9 @@ a {
   flex-direction: column;
   row-gap: 3.2rem;
 }
+.header__blurb-image {
+  max-width: 40%;
+}
 .header__illustration {
   flex: 1 1 40%;
 }
@@ -365,6 +372,24 @@ a {
 
 .access {
   grid-column: main-width-start/main-width-end;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  row-gap: 6rem;
+}
+.access__header {
+  flex: 1 0 50%;
+  transform: translateY(5em);
+}
+.access__header > * + * {
+  margin-top: 2.8rem;
+}
+.access__title {
+  font-size: 2rem;
+  color: #71e5ff;
+  -webkit-text-fill-color: #71e5ff;
 }
 .access__titlesub {
   background: linear-gradient(89.97deg, #ae67fa 15%, #ff8a71 85%);

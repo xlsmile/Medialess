@@ -8,6 +8,43 @@ as media-quires are not based on root element, but on browsers' default 16px uni
   margin-bottom: 1.2em;
 }
 
+.link-featured {
+  grid-column: 3/-1;
+  position: relative;
+  align-self: center;
+  justify-self: end;
+  color: #ff8a71;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.link-featured::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 132%;
+  height: 3px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 250ms ease-in;
+}
+.link-featured:hover::before {
+  transform: scaleX(1);
+}
+
+.title-featured {
+  position: relative;
+}
+.title-featured::before {
+  content: "";
+  background: linear-gradient(103.22deg, #ae67fa 5%, #ff8a71 95%);
+  position: absolute;
+  inset: -2rem auto;
+  width: 4.4rem;
+  height: 0.4rem;
+}
+
 *,
 *::before,
 *::after {
@@ -281,9 +318,6 @@ a {
   gap: 6rem;
   filter: drop-shadow(0 0.4rem 0.4rem rgba(0, 0, 0, 0.25));
 }
-.info__feature-title {
-  grid-column: 1/2;
-}
 .info__feature-title--sub {
   background: linear-gradient(89.97deg, #ae67fa 15%, #ff8a71 85%);
   background-clip: text;
@@ -293,25 +327,6 @@ a {
 .info__feature-text {
   grid-column: 2/-1;
 }
-.info__feature-link {
-  grid-column: 3/-1;
-  align-self: center;
-  justify-self: end;
-  color: #ff8a71;
-  font-size: 2rem;
-  font-weight: 500;
-}
-.info__feature-title, .info__card-title {
-  position: relative;
-}
-.info__feature-title::before, .info__card-title::before {
-  content: "";
-  background: linear-gradient(103.22deg, #ae67fa 5%, #ff8a71 95%);
-  position: absolute;
-  inset: -2rem auto;
-  width: 4.4rem;
-  height: 0.4rem;
-}
 .info__card-title {
   color: #fff;
   font-size: 2rem;
@@ -320,6 +335,32 @@ a {
 
 .future {
   grid-column: main-width-start/main-width-end;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  column-gap: 12rem;
+}
+.future__header {
+  grid-column: 1/4;
+}
+.future__title {
+  margin-bottom: 8rem;
+}
+.future__list {
+  grid-column: 4/-1;
+  color: #fff;
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8rem;
+}
+.future__list .title-featured {
+  grid-column: 1/2;
+  font-weight: 800;
+  transform: translateY(3.2rem);
+}
+.future__list .list-item {
+  grid-column: 2/-1;
+  color: #8bbae9;
 }
 
 .access {

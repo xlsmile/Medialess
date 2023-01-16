@@ -12,7 +12,7 @@ const Blog = () => {
           <span>
             <span className="blog-post__date">{timestamp}</span>
             <h3 className="blog-post__title">
-              AIO is the future. Let us exlore how it is. AIO Round spanker hempen halter.
+              AIO is the future. Let us exlore how it is. AIO Round timber hempen halter.
             </h3>
           </span>
           <a className="blog-post__link" href="/">

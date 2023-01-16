@@ -1,3 +1,34 @@
 .future {
   grid-column: main-width-start / main-width-end;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  column-gap: 12rem;
+
+  &__header {
+    grid-column: 1 / 4;
+  }
+
+  &__title {
+    margin-bottom: 8rem;
+  }
+
+  &__list {
+    grid-column: 4 / -1;
+    color: $color-white;
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8rem;
+
+    .title-featured {
+      grid-column: 1 / 2;
+      font-weight: 800;
+      transform: translateY(3.2rem);
+    }
+
+    .list-item {
+      grid-column: 2 / -1;
+      color: $color-gamma;
+    }
+  }
 }

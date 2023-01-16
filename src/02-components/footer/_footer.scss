@@ -2,8 +2,8 @@
   &__main {
     @include flex(center, center, column, wrap);
     grid-column: main-width-start / main-width-end;
-    background-color: $color-black;
-    box-shadow: 0 0 0 100vmax $color-black;
+    background-color: $color-null;
+    box-shadow: 0 0 0 100vmax $color-null;
     clip-path: inset(0 -100vmax);
   }
 }

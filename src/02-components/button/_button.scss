@@ -43,6 +43,17 @@
         background-color: $color-alpha;
       }
     }
+
+    &--hollow {
+      background-color: transparent;
+      box-shadow: none;
+      outline: 1px solid $color-white;
+
+      &:hover {
+        background-color: inherit;
+        outline: 1px solid $color-gamma;
+      }
+    }
   }
 
   &__in {

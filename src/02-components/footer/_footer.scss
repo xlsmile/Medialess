@@ -33,16 +33,25 @@
   }
 
   .list-title {
-    font-size: 2rem;
+    font-size: $font-size-xs;
+    margin-bottom: 2em;
   }
 
   .list {
     li {
-      margin-top: 1.2em;
+      padding-block: 1.2em;
     }
+
     &__link {
       color: $color-white;
-      font-size: 1.6rem;
+      font-size: $font-size-xs;
+
+      &::before {
+        content: '';
+
+        top: 82%;
+        height: 2px;
+      }
     }
   }
 }

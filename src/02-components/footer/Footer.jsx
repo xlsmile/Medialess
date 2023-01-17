@@ -58,8 +58,11 @@ const Footer = () => {
       <div>
         <h5 className="list-title">Get in touch</h5>
         <ul className="list">
-          <li>Lorem ipsum dolor sit.</li>
-          <li>085-20923-87</li>
+          <li>
+            Lorem ipsum dolor sit.
+            <br />
+            085-20923-87
+          </li>
           <li>
             <a href="mailto:info@info.com" className="list__link">
               info@info.com

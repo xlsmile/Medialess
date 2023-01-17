@@ -520,14 +520,20 @@ img {
   font-size: 1.6rem;
 }
 .footer .list-title {
-  font-size: 2rem;
+  font-size: 1.6rem;
+  margin-bottom: 2em;
 }
 .footer .list li {
-  margin-top: 1.2em;
+  padding-block: 1.2em;
 }
 .footer .list__link {
   color: #fff;
   font-size: 1.6rem;
+}
+.footer .list__link::before {
+  content: "";
+  top: 82%;
+  height: 2px;
 }
 
 .copyright {

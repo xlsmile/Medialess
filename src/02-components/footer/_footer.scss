@@ -1,9 +1,31 @@
 .footer {
-  &__main {
+  grid-column: main-width-start / main-width-end;
+  background-color: $color-null;
+  box-shadow: 0 0 0 100vmax $color-null;
+  clip-path: inset(0 -100vmax);
+
+  &__top {
     @include flex(center, center, column, wrap);
-    grid-column: main-width-start / main-width-end;
-    background-color: $color-null;
-    box-shadow: 0 0 0 100vmax $color-null;
-    clip-path: inset(0 -100vmax);
+    row-gap: 5.2rem;
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+
+  &__navigation {
+    font-size: 2rem;
+    color: $color-white;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    column-gap: 6rem;
+
+    // remove > div later:
+    > div {
+      outline: 1px dashed $color-gamma;
+    }
+  }
+
+  &__navigation-intro {
+    grid-column: 1 / 3;
   }
 }

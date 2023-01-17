@@ -4,4 +4,5 @@ export const navList = [
   { id: '03', href: '#future', text: 'Future' },
   { id: '04', href: '#access', text: 'Access' },
   { id: '05', href: '#blog', text: 'Blog' },
+  { id: '06', href: '#footer', text: 'Contact' },
 ];

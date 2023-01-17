@@ -22,6 +22,10 @@
     @include gradient-text;
   }
 
+  &__text {
+    line-height: 1.8;
+  }
+
   &__image {
     position: relative;
     isolation: isolate;

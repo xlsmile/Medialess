@@ -2,7 +2,7 @@
   grid-column: main-width-start / main-width-end;
   @include flex(stretch, stretch, row, nowrap);
   column-gap: 5.2rem;
-  margin-top: 14rem;
+  padding-block: 20rem 1.6rem;
 
   &__blurb {
     flex: 1 1 60%;

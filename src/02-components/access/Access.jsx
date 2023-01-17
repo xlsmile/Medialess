@@ -14,7 +14,10 @@ const Access = () => {
       </header>
       <div className="access__image">
         <img src={possibility} alt="" />
-        <Button className="button button__rounded">My apps</Button>
+        <Button className="button button__rounded">
+          <i className="fab fa-btc"></i>
+          My apps
+        </Button>
       </div>
     </section>
   );

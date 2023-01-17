@@ -106,6 +106,10 @@ img {
   width: 100%;
 }
 
+.fab {
+  margin-right: 0.8em;
+}
+
 .base {
   background: radial-gradient(circle at 0% 35%, #052a52 0%, #040c18 80%);
   display: grid;

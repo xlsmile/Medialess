@@ -21,4 +21,18 @@
   &__titlesub {
     @include gradient-text;
   }
+
+  &__image {
+    position: relative;
+    isolation: isolate;
+    pointer-events: none;
+
+    button {
+      position: absolute;
+      top: 17rem;
+      right: 4rem;
+      z-index: -1;
+      pointer-events: all;
+    }
+  }
 }

@@ -405,6 +405,18 @@ img {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.access__image {
+  position: relative;
+  isolation: isolate;
+  pointer-events: none;
+}
+.access__image button {
+  position: absolute;
+  top: 17rem;
+  right: 4rem;
+  z-index: -1;
+  pointer-events: all;
+}
 
 .cta {
   grid-column: main-width-start/main-width-end;

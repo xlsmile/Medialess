@@ -1,4 +1,5 @@
 import possibility from '../../assets/possibility.png';
+import Button from '../button/Button';
 
 const Access = () => {
   return (
@@ -11,7 +12,10 @@ const Access = () => {
           way everything joy alteration boisterous the attachment. Party we years to order allow asked of.
         </p>
       </header>
-      <img src={possibility} alt="" />
+      <div className="access__image">
+        <img src={possibility} alt="" />
+        <Button className="button button__rounded">My apps</Button>
+      </div>
     </section>
   );
 };

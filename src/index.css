@@ -273,16 +273,14 @@ img {
 
 .header {
   grid-column: main-width-start/main-width-end;
-  display: flex;
-  align-items: stretch;
-  justify-content: stretch;
-  flex-direction: row;
-  flex-wrap: nowrap;
   column-gap: 5.2rem;
   padding-block: 20rem 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+  justify-items: center;
 }
 .header__blurb {
-  flex: 1 1 60%;
+  row-gap: 3.2rem;
   display: flex;
   flex-direction: column;
   row-gap: 3.2rem;
@@ -291,10 +289,10 @@ img {
   max-width: 40%;
 }
 .header__illustration {
-  flex: 1 1 40%;
+  transform: translateY(6rem);
+  max-width: 80%;
 }
 .header__image {
-  width: 100%;
   opacity: 0.9;
   aspect-ratio: 1/1;
 }

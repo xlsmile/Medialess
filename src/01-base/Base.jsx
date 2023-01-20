@@ -4,15 +4,15 @@ function App() {
   return (
     <div className="base">
       <Navigation />
-      <Header />
-      <Partnership />
+      {/* <Header /> */}
+      {/* <Partnership />
       <Info />
       <Future />
       <Access />
       <Cta />
       <Blog />
       <Footer />
-      <Copyright />
+      <Copyright /> */}
     </div>
   );
 }

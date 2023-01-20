@@ -496,6 +496,21 @@ img {
 }
 .blog-post__link {
   font-size: 1.6rem;
+  transition: all 200ms ease-in-out;
+}
+.blog-post__link:hover {
+  color: #8bbae9;
+}
+.blog-post__link::after {
+  content: "->";
+  position: relative;
+  top: 0;
+  left: 0.4em;
+  transition: all 250ms ease-in-out;
+}
+.blog-post__link:hover::after {
+  left: 0.8em;
+  color: #8bbae9;
 }
 .blog-post--featured {
   grid-row: span 2;
@@ -514,6 +529,7 @@ img {
 .footer h2 {
   grid-column: 1/-1;
   text-align: center;
+  margin-bottom: 0;
 }
 .footer button {
   grid-column: 2/5;

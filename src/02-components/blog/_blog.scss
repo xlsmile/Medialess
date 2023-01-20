@@ -49,6 +49,24 @@
 
   &__link {
     font-size: $font-size-xs;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+      color: $color-gamma;
+    }
+
+    &::after {
+      content: '->';
+      position: relative;
+      top: 0;
+      left: 0.4em;
+      transition: all 250ms ease-in-out;
+    }
+
+    &:hover::after {
+      left: 0.8em;
+      color: $color-gamma;
+    }
   }
 
   &--featured {
